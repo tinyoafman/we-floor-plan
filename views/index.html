@@ -11,7 +11,7 @@
   <script src="/scripts/plan.js"></script>
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container">
     <!--  title -->
     <div class="jumbotron">
       <h1>9202 Floor Plan</h1>
@@ -96,7 +96,7 @@
                   </h4>
                 </div>
                 <div class="col-sm-6">
-                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-3')">Locate</button>
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-4')">Locate</button>
                 </div>
               </div>
             </div>
@@ -120,10 +120,14 @@
             <div class="col-sm-5 room" id="room-2">Room 2</div>
           </div>
           <div class="row">
-            <div class="col-sm-5 room">Room 3</div>
+            <div class="col-sm-5 room" id="room-3">Room 3</div>
             <div class="col-sm-2 aisle"></div>
-            <div class="col-sm-2 room">Room 4</div>
-            <div class="col-sm-2 col-sm-offset-1 room">Room 5</div>
+            <div class="col-sm-5">
+              <div class="row">
+                <div class="col-sm-6 room" id="room-4">Room 4</div>
+                <div class="col-sm-6 room" id="room-5">Room 5</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
