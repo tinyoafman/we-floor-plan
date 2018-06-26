@@ -1,0 +1,14 @@
+{
+  "name": "floor-plan",
+  "version": "1.0.0",
+  "description": "floor plan for dwp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

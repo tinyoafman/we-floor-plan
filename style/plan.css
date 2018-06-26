@@ -1,0 +1,24 @@
+.floor {
+  border-style: solid;
+  border-width: thin;
+  border-color: grey;
+  border-radius: 5px;
+  padding: 20px 20px 20px 20px;
+}
+
+.room {
+  /* margin-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px; */
+  border-style: solid;
+  border-width: thin;
+  border-color: grey;
+  border-radius: 10px;
+  background-color: #dad9db;
+}
+
+.aisle, .room {
+  margin-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
