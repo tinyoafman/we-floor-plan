@@ -8,23 +8,22 @@
   <link rel="stylesheet" href="/style/plan.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-      function log(val){
-        document.getElementById("room-1").style.color="red"
-        console.log(val)
-      }
-  </script>
+  <script src="/scripts/plan.js"></script>
 </head>
 <body>
   <div class="container-fluid">
+    <!--  title -->
     <div class="jumbotron">
       <h1>9202 Floor Plan</h1>
       <p>Interactive floor plan to locate where you want to be in 9202</p>
     </div>
+    <!--  app -->
     <div class="row">
+      <!-- left hand pane -->
       <div class="col-sm-6">
         <h2>Teams</h2>
         <div class="panel-group" id="teams">
+          <!--  RICE -->
           <div class="panel panel-default">
             <div class="panel-heading">
               <div class="row">
@@ -34,66 +33,101 @@
                   </h4>
                 </div>
                 <div class="col-sm-6">
-                  <button type="button" class="btn pull-right" onclick="log('button')">Locate</button>
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-1')">Locate</button>
                 </div>
               </div>
             </div>
-            <div id="rice" class="panel-collapse collapse in">
+            <div id="rice" class="panel-collapse collapse">
               <div class="panel-body">
                 <h4>What We Do</h4>
-                <p>Some stuff on post-its mainly. Look at our board. Pictures.</p>
-                <h4>Who We Are</h4>
+                <p>Re-imagining customer experience. RICE is developing the future user experience the department should align to and how technology can support our goal.</p>
               </div>
             </div>
           </div>
+          <!-- SFT -->
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#teams" href="#testers">
-                  Test</a>
-                </h4>
-              </div>
-              <div id="testers" class="panel-collapse collapse">
-                <div class="panel-body">Working Age testers</div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#teams" href="#cam-bau">CAMLite BAU</a>
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#teams" href="#sft">SFT</a>
                   </h4>
                 </div>
-                <div id="cam-bau" class="panel-collapse collapse">
-                  <div class="panel-body">CAMLite Business-As-Usual team</div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
                 </div>
               </div>
             </div>
-
-
-
-
-
-
-          </div>
-          <div class="col-sm-6">
-            <h2>Plan</h2>
-            <div class="floor">
-              <div class="row">
-                <div class="col-sm-5 room" id="room-1">Room 1</div>
-                <div class="col-sm-2 aisle"></div>
-                <div class="col-sm-5 room">Room 2</div>
-              </div>
-              <div class="row">
-                <div class="col-sm-5 room">Room 3</div>
-                <div class="col-sm-2 aisle"></div>
-                <div class="col-sm-2 room">Room 4</div>
-                <div class="col-sm-3 room">Room 5</div>
+            <div id="sft" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>What We Do</h4>
+                <p>Secure File Testing. Performance testing.</p>
               </div>
             </div>
-
           </div>
+          <!-- CAMLite -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#teams" href="#cam-bau">CAMLite</a>
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-3')">Locate</button>
+                </div>
+              </div>
+            </div>
+            <div id="cam-bau" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>What We Do</h4>
+                <p>Support and deliver development to CAMLite application.</p>
+              </div>
+            </div>
+          </div>
+          <!-- RTE -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#teams" href="#rte">RTE</a>
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-3')">Locate</button>
+                </div>
+              </div>
+            </div>
+            <div id="rte" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>What We Do</h4>
+                <p>Real Time Earnings is a massive database that takes information from HMRC about the amount people earn, cleans it, then distributes it.</p>
+              </div>
+            </div>
+          </div>
+          <!--  A.N.OTHER TEAM -->
+        </div>
+      </div>
+      <!--  right hand pane -->
+      <div class="col-sm-6">
+        <h2>Plan</h2>
+        <div class="floor">
+          <div class="row">
+            <div class="col-sm-5 room" id="room-1">Room 1</div>
+            <div class="col-sm-2 aisle"></div>
+            <div class="col-sm-5 room" id="room-2">Room 2</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5 room">Room 3</div>
+            <div class="col-sm-2 aisle"></div>
+            <div class="col-sm-2 room">Room 4</div>
+            <div class="col-sm-2 col-sm-offset-1 room">Room 5</div>
           </div>
         </div>
       </div>
-    </body>
-    </html>
+    </div> <!-- end row -->
+  </div> <!-- end container -->
+</body>
+</html>
