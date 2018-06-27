@@ -6,16 +6,85 @@
   padding: 20px 20px 20px 20px;
 }
 
-.room {
+.room, .desk-top, .desk-bottom {
   border-style: solid;
   border-width: thin;
   border-color: grey;
-  border-radius: 10px;
   background-color: #dad9db;
 }
 
-.aisle, .room {
+.room{
   margin-bottom: 5px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  border-radius: 10px;
+  height: 50px;
+  text-align: center;
+  padding-top: 6%;
+}
+
+.red-chewit-top, .purple-chewit-top{
+  border-radius: 50px 50px 0px 0px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.red-chewit-bottom, .purple-chewit-bottom{
+  border-radius: 0px 0px 50px 50px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.red-chewit-top, .red-chewit-bottom{
+  border-color: #871400;
+  background-color: #871400;
+}
+
+.purple-chewit-top, .purple-chewit-bottom{
+  border-color: #522172;
+  background-color: #522172;
+}
+
+.desk-top, .red-chewit-top, .purple-chewit-top{
+  margin-top: 5px;
+  height: 20px;
+}
+
+.desk-top{
+  border-radius: 5px 5px 0px 0px;
+}
+
+.desk-bottom{
+  border-radius: 0px 0px 5px 5px;
+}
+
+.desk-bottom, .red-chewit-bottom, .purple-chewit-bottom {
+  margin-bottom: 5px;
+  height: 20px;
+}
+
+.row-aisle{
+  height: 20px;
+}
+
+.room-large{
+  height: 100px;
+}
+
+.row-room{
+  width: 40%;
+}
+
+.row-aisle{
+  width: 20%;
+}
+
+.small{
+  width: 49%;
+}
+
+table{
+  width: 100%;
+}
+
+td{
+  vertical-align: top;
 }
