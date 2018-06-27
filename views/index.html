@@ -20,9 +20,9 @@
     <!--  app -->
     <div class="row">
       <!-- left hand pane -->
-      <div class="col-sm-6 pre-scrollable">
+      <div class="col-sm-6">
         <h2>Teams</h2>
-        <div class="panel-group" id="teams">
+        <div class="panel-group pre-scrollable" id="teams">
           <!--  RICE -->
           <div class="panel panel-default">
             <div class="panel-heading">
@@ -149,30 +149,147 @@
               </div>
             </div>
           </div>
-
+        </div>
+        <!--  Rooms -->
+        <h2>Rooms</h2>
+        <div class="panel-group pre-scrollable" id="rooms">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#rooms" href="#tudhoe">Tudhoe</a>
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-1')">Locate</button>
+                </div>
+              </div>
+            </div>
+            <div id="tudhoe" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>Size</h4>
+                <div>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <span class="glyphicon glyphicon-user"></span>
+                </div>
+                <h4>Facilities</h4>
+                <div>
+                  <span class="glyphicon glyphicon-earphone"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#rooms" href="#westoe">Westoe</a>
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
+                </div>
+              </div>
+            </div>
+            <div id="westoe" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>Size</h4>
+                <div>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <span class="glyphicon glyphicon-user"></span>
+                </div>
+                <h4>Facilities</h4>
+                <div>
+                  <span class="glyphicon glyphicon-earphone"></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-
       <!--  right hand pane -->
       <div class="col-sm-6">
         <h2>Plan</h2>
         <div class="floor">
-          <div class="row">
-            <div class="col-sm-5 room" id="room-1">Room 1</div>
-            <div class="col-sm-2 aisle"></div>
-            <div class="col-sm-5 room" id="room-2">Room 2</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-5 room" id="room-3">Room 3</div>
-            <div class="col-sm-2 aisle"></div>
-            <div class="col-sm-5">
-              <div class="row">
-                <div class="col-sm-6 room" id="room-4">Room 4</div>
-                <div class="col-sm-6 room" id="room-5">Room 5</div>
-              </div>
-            </div>
-          </div>
+          <table>
+            <tr>
+              <td class="row-room"><div class="room clearable" id="room-1"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room"><div class="room clearable" id="room-2"></div></td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="room room-large clearable" id="room-3"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room">
+                <span class="room small pull-left clearable" id="room-4"></span>
+                <span class="room small pull-right clearable" id="room-5"></span>
+              </td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="clearable desk-top" id="desk-1"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room"><div class="clearable desk-top" id="desk-2"></div></td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="clearable desk-bottom" id="desk-3"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room"><div class="clearable desk-bottom" id="desk-4"></div></td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="clearable desk-top" id="desk-5"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room"><div class="clearable desk-top" id="desk-6"></div></td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="clearable desk-bottom" id="desk-7"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room"><div class="clearable desk-bottom" id="desk-8"></div></td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="clearable desk-top" id="desk-5"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room"><div class="clearable desk-top" id="desk-6"></div></td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="clearable desk-bottom" id="desk-7"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room"><div class="clearable desk-bottom" id="desk-8"></div></td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="clearable desk-top" id="desk-9"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room"><div class="clearable desk-top" id="desk-10"></div></td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="clearable desk-bottom" id="desk-11"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room"><div class="clearable desk-bottom" id="desk-12"></div></td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="clearable desk-top" id="desk-13"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room">
+                <span class="red-chewit-top small pull-left"></span>
+                <span class="purple-chewit-top small pull-right"></span>
+              </td>
+            </tr>
+            <tr>
+              <td class="row-room"><div class="clearable desk-bottom" id="desk-14"></div></td>
+              <td class="row-aisle"><div class="aisle"></div></td>
+              <td class="row-room">
+                <span class="red-chewit-bottom small pull-left"></span>
+                <span class="purple-chewit-bottom small pull-right"></span>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div> <!-- end row -->
