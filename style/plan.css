@@ -131,10 +131,8 @@ table{
 }
 
 .pre-scrollable{
-  height: 250px;
+  max-height: 100vh;
 }
-
-
 
 .flash {
   -moz-animation: flash 1s ease-out;
