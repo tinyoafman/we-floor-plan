@@ -21,11 +21,11 @@
 }
 
 .desk-bottom-left{
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 }
 
 .desk-top-left{
-  margin-top: 11px;
+  margin-top: 8px;
 }
 
 .desk-top-right, .desk-top-left{
@@ -97,7 +97,7 @@ span.printer{
 div.printer{
   height: 30px;
   margin-top: 10px;
-  margin-bottom: 34px;
+  margin-bottom: 26px;
 }
 
 .glyphicon-print{
