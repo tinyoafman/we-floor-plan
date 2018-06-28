@@ -1,7 +1,18 @@
 function showPlanElement(type, val){
   console.log("showing plan element: "+val)
-  $('#'+val).addClass("flash");
+
+  let elem = $('#'+val);
+
+  var offset = elem.offset();
+
+  $('html, body').animate({
+    scrollTop: offset.top-100,
+    scrollLeft: offset.left-20
+  });
+  
+  elem.addClass("flash");
+
   setTimeout(function() {
-    $('#'+val).removeClass('flash');
+    elem.removeClass('flash');
   }, 5000);
 }
