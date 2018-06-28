@@ -22,6 +22,10 @@
   padding-top: 2%;
 }
 
+.hot-desk{
+  margin-bottom: 4px;
+}
+
 .red-chewit, .purple-chewit{
   border-radius: 50px;
   border-style: solid;
@@ -59,7 +63,7 @@
 
 .room-large{
   height: 100px;
-  padding-top: 17%;
+  padding-top: 11%;
 }
 
 .row-padding{
