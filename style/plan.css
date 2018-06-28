@@ -8,75 +8,101 @@
   padding: 20px 20px 20px 20px;
 }
 
-.room, .desk-top, .desk-bottom {
+.desk-top-left, .desk-top-right, .desk-bottom-left, .desk-bottom-right{
+    height: 20px;
+}
+
+.desk-top-right{
+  margin-top: 5px;
+}
+
+.desk-bottom-right{
+  margin-bottom: 5px;
+}
+
+.desk-bottom-left{
+  margin-bottom: 16px;
+}
+
+.desk-top-left{
+  margin-top: 16px;
+}
+
+.desk-top-right, .desk-top-left{
+  border-radius: 5px 5px 0px 0px;
+}
+
+.desk-bottom-right, .desk-bottom-left{
+  border-radius: 0px 0px 5px 5px;
+}
+
+.room, .desk-top-right, .desk-bottom-right, .desk-top-left, .desk-bottom-left, .room-large, .breakout, div.printer{
   border-style: solid;
   border-width: thin;
   border-color: grey;
   background-color: #dad9db;
 }
 
-.room{
+.room, .room-large{
   margin-bottom: 5px;
   border-radius: 10px;
-  padding-top: 5%;
+}
+
+.room{
   height: 50px;
+  padding-top: 5%;
 }
 
-.red-chewit-top, .purple-chewit-top{
-  border-radius: 50px 50px 0px 0px;
-  border-style: solid;
-  border-width: thin;
+.room-large{
+  height: 120px;
+  padding-top: 18%;
 }
 
-.red-chewit-bottom, .purple-chewit-bottom{
-  border-radius: 0px 0px 50px 50px;
-  border-style: solid;
-  border-width: thin;
+.red-chewit, .purple-chewit, .breakout{
+  width: 40%;
+  padding-top: 5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.red-chewit-top, .red-chewit-bottom{
+.red-chewit, .purple-chewit{
+    border-style: solid;
+    border-width: thin;
+    border-radius: 50px 50px 50px 50px;
+    height: 50px;
+}
+
+.breakout{
+  border-radius: 50%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.red-chewit{
   border-color: #871400;
   background-color: #871400;
 }
 
-.purple-chewit-top, .purple-chewit-bottom{
+.purple-chewit{
   border-color: #522172;
   background-color: #522172;
 }
 
-.desk-top, .red-chewit-top, .purple-chewit-top{
-  margin-top: 5px;
-  height: 20px;
+span.printer{
+  width: 30%;
+  background-color: #dad9db;
+  padding-top: 5px;
 }
 
-.desk-top{
-  border-radius: 5px 5px 0px 0px;
+div.printer{
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
-.desk-bottom{
-  border-radius: 0px 0px 5px 5px;
-}
-
-.desk-bottom, .red-chewit-bottom, .purple-chewit-bottom {
-  margin-bottom: 5px;
-  height: 20px;
-}
-
-.row-aisle{
-  height: 20px;
-}
-
-.room-large{
-  height: 100px;
-  padding-top: 18%;
-}
-
-.row-room{
-  width: 40%;
-}
-
-.row-aisle{
-  width: 20%;
+.glyphicon-print{
+  font-size: 25px;
+  color: #666368;
 }
 
 .small{
@@ -92,6 +118,14 @@ table{
   text-align: center;
 }
 
-td{
-  vertical-align: top;
+.w85{
+  width: 80%;
+}
+
+.w95{
+  width: 95%;
+}
+
+.w40{
+  width: 40%;
 }
