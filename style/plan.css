@@ -133,3 +133,40 @@ table{
 .pre-scrollable{
   height: 250px;
 }
+
+
+
+.flash {
+  -moz-animation: flash 1s ease-out;
+  -moz-animation-iteration-count: 5;
+
+  -webkit-animation: flash 1s ease-out;
+  -webkit-animation-iteration-count: 5;
+
+  -ms-animation: flash 1s ease-out;
+  -ms-animation-iteration-count: 5;
+}
+
+@keyframes flash {
+    0% { background-color: #dad9db; }
+    50% { background-color: #f7b620; }
+    100% { background-color: #dad9db; }
+}
+
+@-webkit-keyframes flash {
+    0% { background-color: #dad9db; }
+    50% { background-color: #f7b620; }
+    100% { background-color: #dad9db; }
+}
+
+@-moz-keyframes flash {
+    0% { background-color: #dad9db; }
+    50% { background-color: #f7b620; }
+    100% { background-color: #dad9db; }
+}
+
+@-ms-keyframes flash {
+    0% { background-color: #dad9db; }
+    50% { background-color: #f7b620; }
+    100% { background-color: #dad9db; }
+}

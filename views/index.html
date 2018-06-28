@@ -32,12 +32,12 @@
                   <table>
                     <tr>
                       <td>
-                        <div class="room"></div>
+                        <div class="room" id="r1"></div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <div class="room-large"></div>
+                        <div class="room-large" id="r2"></div>
                       </td>
                     </tr>
                     <tr>
@@ -102,12 +102,12 @@
                     </tr>
                     <tr>
                       <td>
-                        <div class="room-large"></div>
+                        <div class="room-large" id="r3"></div>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <div class="room"></div>
+                        <div class="room" id="r4"></div>
                       </td>
                     </tr>
                   </table>
@@ -116,14 +116,14 @@
                   <table>
                     <tr>
                       <td>
-                        <div class="w85 pull-left room"></div>
+                        <div class="w85 pull-left room" id="r5"></div>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <div class="w85 pull-left">
-                          <span class="small room pull-left"></span>
-                          <span class="small room pull-right"></span>
+                          <span class="small room pull-left" id="r6"></span>
+                          <span class="small room pull-right" id="r7"></span>
                         </div>
                       </td>
                     </tr>
@@ -216,14 +216,14 @@
                   <tr>
                     <td>
                       <div class="w85 pull-left">
-                        <span class="small room pull-left"></span>
-                        <span class="small room pull-right"></span>
+                        <span class="small room pull-left" id="r8"></span>
+                        <span class="small room pull-right" id="r9"></span>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div class="w85 pull-left room"></div>
+                      <div class="w85 pull-left room" id="r10"></div>
                     </td>
                   </tr>
                 </table>
@@ -243,15 +243,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#tudhoe">Tudhoe</a>
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room1">Room A</a>
                 </h4>
               </div>
               <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-1')">Locate</button>
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r1')">Locate</button>
               </div>
             </div>
           </div>
-          <div id="tudhoe" class="panel-collapse collapse">
+          <div id="room1" class="panel-collapse collapse">
             <div class="panel-body">
               <h4>Size</h4>
               <div>
@@ -273,15 +273,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#westoe">Westoe</a>
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room2">Room B</a>
                 </h4>
               </div>
               <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r3')">Locate</button>
               </div>
             </div>
           </div>
-          <div id="westoe" class="panel-collapse collapse">
+          <div id="room2" class="panel-collapse collapse">
             <div class="panel-body">
               <h4>Size</h4>
               <div>
@@ -303,15 +303,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#other-1">Other Room</a>
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room3">Room C</a>
                 </h4>
               </div>
               <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r4')">Locate</button>
               </div>
             </div>
           </div>
-          <div id="other-1" class="panel-collapse collapse">
+          <div id="room3" class="panel-collapse collapse">
             <div class="panel-body">
               <h4>Size</h4>
               <div>
@@ -333,15 +333,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#other-2">Other Room</a>
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room4">Room D</a>
                 </h4>
               </div>
               <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r5')">Locate</button>
               </div>
             </div>
           </div>
-          <div id="other-2" class="panel-collapse collapse">
+          <div id="room4" class="panel-collapse collapse">
             <div class="panel-body">
               <h4>Size</h4>
               <div>
@@ -363,15 +363,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#other-3">Other Room</a>
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room5">Room E</a>
                 </h4>
               </div>
               <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r6')">Locate</button>
               </div>
             </div>
           </div>
-          <div id="other-3" class="panel-collapse collapse">
+          <div id="room5" class="panel-collapse collapse">
             <div class="panel-body">
               <h4>Size</h4>
               <div>
@@ -393,15 +393,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#other-4">Other Room</a>
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room6">Room F</a>
                 </h4>
               </div>
               <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r7')">Locate</button>
               </div>
             </div>
           </div>
-          <div id="other-4" class="panel-collapse collapse">
+          <div id="room6" class="panel-collapse collapse">
             <div class="panel-body">
               <h4>Size</h4>
               <div>
@@ -423,15 +423,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#other-5">Other Room</a>
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room7">Room G</a>
                 </h4>
               </div>
               <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r8')">Locate</button>
               </div>
             </div>
           </div>
-          <div id="other-5" class="panel-collapse collapse">
+          <div id="room7" class="panel-collapse collapse">
             <div class="panel-body">
               <h4>Size</h4>
               <div>
@@ -453,15 +453,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#other-6">Other Room</a>
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room8">Room H</a>
                 </h4>
               </div>
               <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r9')">Locate</button>
               </div>
             </div>
           </div>
-          <div id="other-6" class="panel-collapse collapse">
+          <div id="room8" class="panel-collapse collapse">
             <div class="panel-body">
               <h4>Size</h4>
               <div>
@@ -483,15 +483,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#other-7">Other Room</a>
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room9">Room I</a>
                 </h4>
               </div>
               <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r10')">Locate</button>
               </div>
             </div>
           </div>
-          <div id="other-7" class="panel-collapse collapse">
+          <div id="room9" class="panel-collapse collapse">
             <div class="panel-body">
               <h4>Size</h4>
               <div>
