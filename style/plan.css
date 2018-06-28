@@ -9,23 +9,23 @@
 }
 
 .desk-top-left, .desk-top-right, .desk-bottom-left, .desk-bottom-right{
-    height: 20px;
+    height: 15px;
 }
 
 .desk-top-right{
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .desk-bottom-right{
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .desk-bottom-left{
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 
 .desk-top-left{
-  margin-top: 16px;
+  margin-top: 11px;
 }
 
 .desk-top-right, .desk-top-left{
@@ -49,12 +49,12 @@
 }
 
 .room{
-  height: 50px;
+  height: 30px;
   padding-top: 5%;
 }
 
 .room-large{
-  height: 120px;
+  height: 90px;
   padding-top: 18%;
 }
 
@@ -69,12 +69,12 @@
     border-style: solid;
     border-width: thin;
     border-radius: 50px 50px 50px 50px;
-    height: 50px;
+    height: 35px;
 }
 
 .breakout{
   border-radius: 50%;
-  height: 50px;
+  height: 35px;
   margin-top: 10px;
 }
 
@@ -95,13 +95,13 @@ span.printer{
 }
 
 div.printer{
-  height: 40px;
+  height: 30px;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .glyphicon-print{
-  font-size: 25px;
+  font-size: 20px;
   color: #666368;
 }
 
@@ -110,7 +110,7 @@ div.printer{
 }
 
 .pull-bottom{
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 table{
