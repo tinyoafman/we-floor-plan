@@ -1,4 +1,32 @@
 /*  There are some MASSIVE hacks in this, but hey*/
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+}
+
+span.printer{
+  width: 30%;
+  background-color: #dad9db;
+  padding-top: 5px;
+}
+
+div.printer{
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 26px;
+}
 
 .floor {
   border-style: solid;
@@ -88,21 +116,14 @@
   background-color: #522172;
 }
 
-span.printer{
-  width: 30%;
-  background-color: #dad9db;
-  padding-top: 5px;
-}
-
-div.printer{
-  height: 30px;
-  margin-top: 10px;
-  margin-bottom: 26px;
-}
-
 .glyphicon-print{
   font-size: 20px;
   color: #666368;
+}
+
+.glyphicon-chevron-up{
+    color: #363738;
+    font-size: 35px;
 }
 
 .small{
@@ -111,11 +132,6 @@ div.printer{
 
 .pull-bottom{
   margin-top: 30px;
-}
-
-table{
-  width: 100%;
-  text-align: center;
 }
 
 .w85{
@@ -141,26 +157,6 @@ table{
 .bottom{
   vertical-align: bottom;
 }
-
-
-
-#top-btn {
-    display: none;
-    position: fixed;
-    bottom: 5%;
-    left: 50%;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.glyphicon-chevron-up{
-    color: #363738;
-    font-size: 35px;
-}
-
 
 .flash {
   -moz-animation: flash 1s ease-out;

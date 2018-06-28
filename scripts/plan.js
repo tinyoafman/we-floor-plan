@@ -2,10 +2,15 @@
 window.onscroll = function() {scroll()};
 
 function scroll() {
+
+  let btn = $("#top-btn");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("top-btn").style.display = "block";
+        btn.show();
+        setTimeout(function() {
+          btn.fadeOut();
+        }, 5000);
     } else {
-        document.getElementById("top-btn").style.display = "none";
+        btn.hide();
     }
 }
 
