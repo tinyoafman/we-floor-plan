@@ -134,6 +134,34 @@ table{
   max-height: 100vh;
 }
 
+.home{
+  font-size: 10pt;
+}
+
+.bottom{
+  vertical-align: bottom;
+}
+
+
+
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.glyphicon-chevron-up{
+    color: #363738;
+    font-size: 35px;
+}
+
+
 .flash {
   -moz-animation: flash 1s ease-out;
   -moz-animation-iteration-count: 5;

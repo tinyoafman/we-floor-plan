@@ -12,17 +12,429 @@
 </head>
 <body>
   <div class="container">
+    <!--  beck to top -->
+    <button onclick="gotoTop()" id="top-btn"><div class="glyphicon glyphicon-chevron-up"></div><div>top</div></button>
     <!--  title -->
     <div class="jumbotron">
       <h1>9202 Floor Plan</h1>
       <p>Interactive floor plan to locate where you want to be in 9202</p>
     </div>
     <!--  app -->
-    <div class="row">
+    <div class="row" id="rooms">
       <!-- left hand pane -->
+      <div class="col-sm-3">
+        <!--  Rooms -->
+        <h2>Rooms</h2>
+        <div class="panel-group pre-scrollable" id="rooms">
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room1">Room A</a>
+                </h4>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r1')">Locate</button>
+              </div>
+            </div>
+          </div>
+          <div id="room1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Size</h4>
+              <div>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <h4>Facilities</h4>
+              <div>
+                <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room2">Room B</a>
+                </h4>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r3')">Locate</button>
+              </div>
+            </div>
+          </div>
+          <div id="room2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Size</h4>
+              <div>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <h4>Facilities</h4>
+              <div>
+                <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room3">Room C</a>
+                </h4>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r4')">Locate</button>
+              </div>
+            </div>
+          </div>
+          <div id="room3" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Size</h4>
+              <div>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <h4>Facilities</h4>
+              <div>
+                <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room4">Room D</a>
+                </h4>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r5')">Locate</button>
+              </div>
+            </div>
+          </div>
+          <div id="room4" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Size</h4>
+              <div>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <h4>Facilities</h4>
+              <div>
+                <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room5">Room E</a>
+                </h4>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r6')">Locate</button>
+              </div>
+            </div>
+          </div>
+          <div id="room5" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Size</h4>
+              <div>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <h4>Facilities</h4>
+              <div>
+                <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room6">Room F</a>
+                </h4>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r7')">Locate</button>
+              </div>
+            </div>
+          </div>
+          <div id="room6" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Size</h4>
+              <div>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <h4>Facilities</h4>
+              <div>
+                <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room7">Room G</a>
+                </h4>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r8')">Locate</button>
+              </div>
+            </div>
+          </div>
+          <div id="room7" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Size</h4>
+              <div>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <h4>Facilities</h4>
+              <div>
+                <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room8">Room H</a>
+                </h4>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r9')">Locate</button>
+              </div>
+            </div>
+          </div>
+          <div id="room8" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Size</h4>
+              <div>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <h4>Facilities</h4>
+              <div>
+                <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#rooms" href="#room9">Room I</a>
+                </h4>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r10')">Locate</button>
+              </div>
+            </div>
+          </div>
+          <div id="room9" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4>Size</h4>
+              <div>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <h4>Facilities</h4>
+              <div>
+                <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!--  middle pane -->
+      <div class="col-sm-4">
+        <!--  Teams -->
+        <h2>Teams</h2>
+        <div class="panel-group pre-scrollable" id="teams">
+          <!--  RICE -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#teams" href="#rice">RICE</a>
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-1')">Locate</button>
+                </div>
+              </div>
+            </div>
+            <div id="rice" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>What We Do</h4>
+                <p>Re-imagining customer experience. RICE is developing the future user experience the department should align to and how technology can support our goal.</p>
+              </div>
+            </div>
+          </div>
+          <!-- SFT -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#teams" href="#sft">SFT</a>
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
+                </div>
+              </div>
+            </div>
+            <div id="sft" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>What We Do</h4>
+                <p>Secure File Testing. Performance testing.</p>
+              </div>
+            </div>
+          </div>
+          <!-- CAMLite -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#teams" href="#cam-bau">CAMLite</a>
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-3')">Locate</button>
+                </div>
+              </div>
+            </div>
+            <div id="cam-bau" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>What We Do</h4>
+                <p>Support and deliver development to CAMLite application.</p>
+              </div>
+            </div>
+          </div>
+          <!-- RTE -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#teams" href="#rte">RTE</a>
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-4')">Locate</button>
+                </div>
+              </div>
+            </div>
+            <div id="rte" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>What We Do</h4>
+                <p>Real Time Earnings is a massive database that takes information from HMRC about the amount people earn, cleans it, then distributes it.</p>
+              </div>
+            </div>
+          </div>
+          <!--  WSP -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#teams" href="#wsp">WSP</a>
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-5')">Locate</button>
+                </div>
+              </div>
+            </div>
+            <div id="wsp" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>What We Do</h4>
+                <p>Development and changes for WSP system.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Business and Management -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#teams" href="#bam">Business and Management</a>
+                  </h4>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn pull-right" onclick="showPlanElement('room-6')">Locate</button>
+                </div>
+              </div>
+            </div>
+            <div id="bam" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h4>What We Do</h4>
+                <p>Portfolio management, resourcing and recruiting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right hand pane -->
       <div class="col-sm-5">
         <h2>Plan</h2>
-
         <div class="floor">
           <!--  hate table in table but...-->
           <table>
@@ -200,10 +612,10 @@
                   <tr>
                     <td>
                       <div class="printer">
-                      <span class="glyphicon glyphicon-print printer pull-left"></span>
-                      <span class="glyphicon glyphicon-print printer"></span>
-                      <span class="glyphicon glyphicon-print printer pull-right"></span>
-                    </div>
+                        <span class="glyphicon glyphicon-print printer pull-left"></span>
+                        <span class="glyphicon glyphicon-print printer"></span>
+                        <span class="glyphicon glyphicon-print printer pull-right"></span>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -230,419 +642,11 @@
               </span>
             </td>
           </tr>
-        </table>
-      </div>
-    </div>
-    <!--  right hand pane -->
-    <div class="col-sm-3">
-      <!--  Rooms -->
-      <h2>Rooms</h2>
-      <div class="panel-group pre-scrollable" id="rooms">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#room1">Room A</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r1')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="room1" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Size</h4>
-              <div>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-              </div>
-              <h4>Facilities</h4>
-              <div>
-                <span class="glyphicon glyphicon-earphone"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#room2">Room B</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r3')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="room2" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Size</h4>
-              <div>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-              </div>
-              <h4>Facilities</h4>
-              <div>
-                <span class="glyphicon glyphicon-earphone"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#room3">Room C</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r4')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="room3" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Size</h4>
-              <div>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-              </div>
-              <h4>Facilities</h4>
-              <div>
-                <span class="glyphicon glyphicon-earphone"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#room4">Room D</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r5')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="room4" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Size</h4>
-              <div>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-              </div>
-              <h4>Facilities</h4>
-              <div>
-                <span class="glyphicon glyphicon-earphone"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#room5">Room E</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r6')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="room5" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Size</h4>
-              <div>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-              </div>
-              <h4>Facilities</h4>
-              <div>
-                <span class="glyphicon glyphicon-earphone"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#room6">Room F</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r7')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="room6" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Size</h4>
-              <div>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-              </div>
-              <h4>Facilities</h4>
-              <div>
-                <span class="glyphicon glyphicon-earphone"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#room7">Room G</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r8')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="room7" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Size</h4>
-              <div>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-              </div>
-              <h4>Facilities</h4>
-              <div>
-                <span class="glyphicon glyphicon-earphone"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#room8">Room H</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r9')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="room8" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Size</h4>
-              <div>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-              </div>
-              <h4>Facilities</h4>
-              <div>
-                <span class="glyphicon glyphicon-earphone"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#rooms" href="#room9">Room I</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room','r10')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="room9" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>Size</h4>
-              <div>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-                <span class="glyphicon glyphicon-user"></span>
-              </div>
-              <h4>Facilities</h4>
-              <div>
-                <span class="glyphicon glyphicon-earphone"></span>
-              </div>
-            </div>
-          </div>
+          </table>
         </div>
       </div>
-    </div>
-    <div class="col-sm-4">
-      <!--  Teams -->
-      <h2>Teams</h2>
-      <div class="panel-group pre-scrollable" id="teams">
-        <!--  RICE -->
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#teams" href="#rice">RICE</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-1')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="rice" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>What We Do</h4>
-              <p>Re-imagining customer experience. RICE is developing the future user experience the department should align to and how technology can support our goal.</p>
-            </div>
-          </div>
-        </div>
-        <!-- SFT -->
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#teams" href="#sft">SFT</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-2')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="sft" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>What We Do</h4>
-              <p>Secure File Testing. Performance testing.</p>
-            </div>
-          </div>
-        </div>
-        <!-- CAMLite -->
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#teams" href="#cam-bau">CAMLite</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-3')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="cam-bau" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>What We Do</h4>
-              <p>Support and deliver development to CAMLite application.</p>
-            </div>
-          </div>
-        </div>
-        <!-- RTE -->
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#teams" href="#rte">RTE</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-4')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="rte" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>What We Do</h4>
-              <p>Real Time Earnings is a massive database that takes information from HMRC about the amount people earn, cleans it, then distributes it.</p>
-            </div>
-          </div>
-        </div>
-        <!--  WSP -->
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#teams" href="#wsp">WSP</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-5')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="wsp" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>What We Do</h4>
-              <p>Development and changes for WSP system.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Business and Management -->
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-sm-6">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#teams" href="#bam">Business and Management</a>
-                </h4>
-              </div>
-              <div class="col-sm-6">
-                <button type="button" class="btn pull-right" onclick="showPlanElement('room-6')">Locate</button>
-              </div>
-            </div>
-          </div>
-          <div id="bam" class="panel-collapse collapse">
-            <div class="panel-body">
-              <h4>What We Do</h4>
-              <p>Portfolio management, resourcing and recruiting</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> <!-- end row -->
-</div> <!-- end container -->
+
+    </div> <!-- end row -->
+  </div> <!-- end container -->
 </body>
 </html>
